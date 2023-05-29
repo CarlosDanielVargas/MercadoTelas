@@ -2,8 +2,12 @@
 
 one:
   item: one
+  storing_format_units: 9.99
+  transferring_format_units: 9.99
   inventory: one
 
 two:
   item: two
+  storing_format_units: 9.99
+  transferring_format_units: 9.99
   inventory: two

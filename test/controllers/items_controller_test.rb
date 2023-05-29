@@ -17,7 +17,7 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create item" do
     assert_difference("Item.count") do
-      post items_url, params: { item: { brand_id: @item.brand_id, conversion_factor: @item.conversion_factor, design_id: @item.design_id, minimum_stock: @item.minimum_stock, name: @item.name, size: @item.size, storing_format_units: @item.storing_format_units, subcategory_id: @item.subcategory_id, transfering_format_units: @item.transfering_format_units } }
+      post items_url, params: { item: { brand_id: @item.brand_id, conversion_factor: @item.conversion_factor, design_id: @item.design_id, minimum_stock: @item.minimum_stock, name: @item.name, size: @item.size, subcategory_id: @item.subcategory_id } }
     end
 
     assert_redirected_to item_url(Item.last)
@@ -34,7 +34,7 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update item" do
-    patch item_url(@item), params: { item: { brand_id: @item.brand_id, conversion_factor: @item.conversion_factor, design_id: @item.design_id, minimum_stock: @item.minimum_stock, name: @item.name, size: @item.size, storing_format_units: @item.storing_format_units, subcategory_id: @item.subcategory_id, transfering_format_units: @item.transfering_format_units } }
+    patch item_url(@item), params: { item: { brand_id: @item.brand_id, conversion_factor: @item.conversion_factor, design_id: @item.design_id, minimum_stock: @item.minimum_stock, name: @item.name, size: @item.size, subcategory_id: @item.subcategory_id } }
     assert_redirected_to item_url(@item)
   end
 

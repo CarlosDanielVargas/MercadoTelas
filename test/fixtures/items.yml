@@ -2,8 +2,6 @@
 
 one:
   name: MyString
-  storing_format_units: 9.99
-  transfering_format_units: 9.99
   conversion_factor: 9.99
   size: 9.99
   subcategory: one
@@ -13,8 +11,6 @@ one:
 
 two:
   name: MyString
-  storing_format_units: 9.99
-  transfering_format_units: 9.99
   conversion_factor: 9.99
   size: 9.99
   subcategory: two

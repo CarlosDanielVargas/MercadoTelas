@@ -20,9 +20,7 @@ class ItemsTest < ApplicationSystemTestCase
     fill_in "Minimum stock", with: @item.minimum_stock
     fill_in "Name", with: @item.name
     fill_in "Size", with: @item.size
-    fill_in "Storing format units", with: @item.storing_format_units
     fill_in "Subcategory", with: @item.subcategory_id
-    fill_in "Transfering format units", with: @item.transfering_format_units
     click_on "Create Item"
 
     assert_text "Item was successfully created"
@@ -39,9 +37,7 @@ class ItemsTest < ApplicationSystemTestCase
     fill_in "Minimum stock", with: @item.minimum_stock
     fill_in "Name", with: @item.name
     fill_in "Size", with: @item.size
-    fill_in "Storing format units", with: @item.storing_format_units
     fill_in "Subcategory", with: @item.subcategory_id
-    fill_in "Transfering format units", with: @item.transfering_format_units
     click_on "Update Item"
 
     assert_text "Item was successfully updated"
