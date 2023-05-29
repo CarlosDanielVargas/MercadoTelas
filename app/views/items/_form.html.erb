@@ -1,0 +1,62 @@
+<%= form_with(model: item) do |form| %>
+  <% if item.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+        <% item.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :storing_format_units, style: "display: block" %>
+    <%= form.text_field :storing_format_units %>
+  </div>
+
+  <div>
+    <%= form.label :transfering_format_units, style: "display: block" %>
+    <%= form.text_field :transfering_format_units %>
+  </div>
+
+  <div>
+    <%= form.label :conversion_factor, style: "display: block" %>
+    <%= form.text_field :conversion_factor %>
+  </div>
+
+  <div>
+    <%= form.label :size, style: "display: block" %>
+    <%= form.text_field :size %>
+  </div>
+
+  <div>
+    <%= form.label :subcategory_id, style: "display: block" %>
+    <%= form.text_field :subcategory_id %>
+  </div>
+
+  <div>
+    <%= form.label :brand_id, style: "display: block" %>
+    <%= form.text_field :brand_id %>
+  </div>
+
+  <div>
+    <%= form.label :design_id, style: "display: block" %>
+    <%= form.text_field :design_id %>
+  </div>
+
+  <div>
+    <%= form.label :minimum_stock, style: "display: block" %>
+    <%= form.text_field :minimum_stock %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
