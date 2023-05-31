@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @warehouse %>
+
+<div>
+  <%= link_to "Edit this warehouse", edit_warehouse_path(@warehouse) %> |
+  <%= link_to "Back to warehouses", warehouses_path %>
+
+  <%= button_to "Destroy this warehouse", @warehouse, method: :delete %>
+</div>

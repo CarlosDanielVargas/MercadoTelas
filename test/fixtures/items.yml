@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  conversion_factor: 9.99
+  size: 9.99
+  subcategory: one
+  brand: one
+  design: one
+  minimum_stock: 9.99
+
+two:
+  name: MyString
+  conversion_factor: 9.99
+  size: 9.99
+  subcategory: two
+  brand: two
+  design: two
+  minimum_stock: 9.99
